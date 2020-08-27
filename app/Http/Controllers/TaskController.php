@@ -9,9 +9,9 @@ use App\Repositories\TaskRepository;
 
 class TaskController extends Controller
 {
- protected $tasks;
- public function __construct(TaskRepository $tasks)
- {
+   protected $tasks;
+   public function __construct(TaskRepository $tasks)
+   {
     $this->middleware('auth');
     $this->tasks = $tasks;
 }
@@ -91,8 +91,11 @@ class TaskController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, Task $task)
     {
-        //
-    }
+       $this->authorize('destroy', $task);
+       $task->delete();
+
+       return redirect('/tasks');
+   }
 }

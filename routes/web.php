@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('users/register', 'Auth\RegisterController@showRegistrationForm');
 Route::post('users/register', 'Auth\RegisterController@register');
 Route::get('language/{language}','LanguageController@index')->name('language.index');
+Route::resource('/tasks', 'TaskController');
+Route::resource('/tasks/{task}', 'TaskController');

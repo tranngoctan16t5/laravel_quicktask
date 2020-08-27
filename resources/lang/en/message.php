@@ -20,4 +20,8 @@ return [
     'resetpassword' => 'Reset Password',
     'sendpasswordsesetlink' => 'Send Password Reset Link',
     'confirmyourpasswordbeforecontinuing' => 'Please confirm your password before continuing.',
+    'task' => 'Task',
+    'addtask' => 'Add Task',
+    'currenttask' => 'Current Tasks',
+    'delete' => 'Delete',
 ];

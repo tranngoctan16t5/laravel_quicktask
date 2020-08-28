@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('users/register', 'Auth\RegisterController@showRegistrationForm');
+Route::post('users/register', 'Auth\RegisterController@register');
+Route::get('language/{language}','LanguageController@index')->name('language.index');

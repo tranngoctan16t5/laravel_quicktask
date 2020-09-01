@@ -20,4 +20,8 @@ return [
     'resetpassword' => 'Đặt lại mật khẩu',
     'sendpasswordsesetlink' => 'Gửi liên kết đặt lại mật khẩu',
     'confirmyourpasswordbeforecontinuing' => 'Vui lòng xác nhận mật khẩu của bạn trước khi tiếp tục.',
+    'task' => 'Nhiệm vụ',
+    'addtask' => 'Thêm nhiệm vụ',
+    'currenttask' => 'Nhiệm vụ hiện tại',
+    'delete' => 'xóa',
 ];

@@ -38,7 +38,7 @@
                         <div>{{ $task->name }}</div>
                     </td>
                     <td>
-                        <form action="{{ route('tasks.destroy','$task->id') }}" method="POST">
+                        <form action="{{ route('tasks.destroy',$task->id) }}" method="POST">
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
                             <button type="submit" id="delete-task-{{ $task->id }}" class="btn btn-danger">
